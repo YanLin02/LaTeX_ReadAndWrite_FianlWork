@@ -1,0 +1,214 @@
+
+% 路径规划数学定义 4篇
+@inbook{inbook,
+author = {Choset, Howie and Lynch, Kevin and Hutchinson, Seth and Kantor, George and Burgard, Wolfram and Kavraki, Lydia and Thrun, Sebastian},
+year = {2005},
+month = {01},
+pages = {},
+title = {Principles of Robot Motion: Theory, Algorithms, and Implementations},
+isbn = {0-262-03327-5}
+}
+
+@phdthesis{c6793ef3be6c43a3bed4d561bc1f8cd0,
+title = "3D Path Planning for Autonomous Aerial Vehicles in Constrained Spaces",
+abstract = "Determining how an autonomous Unmanned Aircraft System (UAS) should reach a goal position amidst obstacles is a challenging and difficult problem. This thesis treats the subject of path planning and trajectory generation for UAS, while utilizing the ability to move in all three spatial dimensions. The primary contributions of this thesis are an approximate path planner and a geodesic path planner. Both planners are model independent and operate on the surface of the configuration space to identify a length minimizing path.The approximate planner determines an approximated shortest path by building and searching a visibility graph. This planner maintains this visibility graph to enable fast multi-query searches as well as replanning when changes occur in the work space. As paths obtained from a visibility graph are not continuously differentiable, a trajectory generation method is developed that uses the path to find a collision free trajectory that is more appropriate for flight.The geodesic planner relates to wavefront-type planning, and identifies continuously differentiable geodesic paths as parametric equations determined by surface primitives given from the configuration space. Consequently, this planner uses a more analytical approach since it relies on combinations of optimal curves.Both planners operate on an explicit description of the configuration space in a work space containing 3D obstacles. A method was developed that generates convex configuration space obstacles from any point clouds or geometric meshes in work space.Two approaches are used for generating a trajectory from an existing path. The first generator use Dubins curves to find a collision free continuously differentiable trajectory. The second generator relies on formulating and solving an optimal control problem (OCP) using a Legendre pseudospectral method. The main contributions of this approach are the formulation of distance functions that constrains the trajectory. This allows finding trajectories that follows minimal length paths while optimizing the trajectory accordingto a performance index.The methods and algorithms developed in this thesis are implemented in a planning application and validated through simulated flight using a helicopter model.",
+author = "Flemming Sch{\o}ler",
+year = "2012",
+language = "English",
+isbn = "978-87-92328-73-1",
+publisher = "Section of Automation & Control, Department of Electronic Systems, Aalborg University",
+}
+
+@book{lavalle_2006,
+place = {Cambridge},
+title = {Planning Algorithms},
+DOI = {10.1017/CBO9780511546877},
+publisher = {Cambridge University Press},
+author = {LaValle, Steven M.},
+year = {2006}
+}
+
+@article{doi:10.1177/0278364911406761,
+author = {Sertac Karaman and Emilio Frazzoli},
+title ={Sampling-based algorithms for optimal motion planning},
+journal = {The International Journal of Robotics Research},
+volume = {30},
+number = {7},
+pages = {846-894},
+year = {2011},
+doi = {10.1177/0278364911406761},
+URL = {https://doi.org/10.1177/0278364911406761},
+eprint = {https://doi.org/10.1177/0278364911406761},
+abstract = { During the last decade, sampling-based path planning algorithms, such as probabilistic roadmaps (PRM) and rapidly exploring random trees (RRT), have been shown to work well in practice and possess theoretical guarantees such as probabilistic completeness. However, little effort has been devoted to the formal analysis of the quality of the solution returned by such algorithms, e.g. as a function of the number of samples. The purpose of this paper is to fill this gap, by rigorously analyzing the asymptotic behavior of the cost of the solution returned by stochastic sampling-based algorithms as the number of samples increases. A number of negative results are provided, characterizing existing algorithms, e.g. showing that, under mild technical conditions, the cost of the solution returned by broadly used sampling-based algorithms converges almost surely to a non-optimal value. The main contribution of the paper is the introduction of new algorithms, namely, PRM* and RRT*, which are provably asymptotically optimal, i.e. such that the cost of the returned solution converges almost surely to the optimum. Moreover, it is shown that the computational complexity of the new algorithms is within a constant factor of that of their probabilistically complete (but not asymptotically optimal) counterparts. The analysis in this paper hinges on novel connections between stochastic sampling-based path planning algorithms and the theory of random geometric graphs. }
+}
+
+
+
+%无人机路径规划综述
+@INPROCEEDINGS{7053093,
+author={Liang Yang and Juntong Qi and Xiao, Jizhong and Xia Yong},
+booktitle={Proceeding of the 11th World Congress on Intelligent Control and Automation}, 
+title={A literature review of UAV 3D path planning}, 
+year={2014},
+volume={},
+number={},
+pages={2376-2381},
+doi={10.1109/WCICA.2014.7053093}
+}
+
+
+
+%PRM算法
+@INPROCEEDINGS{844107,
+author={Bohlin, R. and Kavraki, L.E.},
+booktitle={Proceedings 2000 ICRA. Millennium Conference. IEEE International Conference on Robotics and Automation. Symposia Proceedings (Cat. No.00CH37065)}, 
+title={Path planning using lazy PRM}, 
+year={2000},
+volume={1},
+number={},
+pages={521-528 vol.1},
+doi={10.1109/ROBOT.2000.844107}
+}
+
+
+
+%RRT算法
+@article{LaValle1998RapidlyexploringRT,
+title={Rapidly-exploring random trees : a new tool for path planning},
+author={Steven M. LaValle},
+journal={The annual research report},
+year={1998}
+}
+
+
+
+%基于RRT的优化算法 2篇
+@INPROCEEDINGS{844730,
+author={Kuffner, J.J. and LaValle, S.M.},
+booktitle={Proceedings 2000 ICRA. Millennium Conference. IEEE International Conference on Robotics and Automation. Symposia Proceedings (Cat. No.00CH37065)}, 
+title={RRT-connect: An efficient approach to single-query path planning}, 
+year={2000},
+volume={2},
+number={},
+pages={995-1001 vol.2},
+doi={10.1109/ROBOT.2000.844730}
+}
+
+@INPROCEEDINGS{7989581,
+author={Arslan, Oktay and Berntorp, Karl and Tsiotras, Panagiotis},
+booktitle={2017 IEEE International Conference on Robotics and Automation (ICRA)}, 
+title={Sampling-based algorithms for optimal motion planning using closed-loop prediction}, 
+year={2017},
+volume={},
+number={},
+pages={4991-4996},
+doi={10.1109/ICRA.2017.7989581}
+}
+
+
+
+%基于生物启发的优化算法 6篇
+@ARTICLE{4129846,
+author={Dorigo, Marco and Birattari, Mauro and Stutzle, Thomas},
+journal={IEEE Computational Intelligence Magazine}, 
+title={Ant colony optimization}, 
+year={2006},
+volume={1},
+number={4},
+pages={28-39},
+doi={10.1109/MCI.2006.329691}
+}
+
+@INPROCEEDINGS{5498477,
+author={Chao Zhang and Zhen, Ziyang and Daobo Wang and Meng Li},
+booktitle={2010 Chinese Control and Decision Conference}, 
+title={UAV path planning method based on ant colony optimization}, 
+year={2010},
+volume={},
+number={},
+pages={3790-3792},
+doi={10.1109/CCDC.2010.5498477}
+}
+
+@article{ZHAO201854,
+title = {Survey on computational-intelligence-based UAV path planning},
+journal = {Knowledge-Based Systems},
+volume = {158},
+pages = {54-64},
+year = {2018},
+issn = {0950-7051},
+doi = {https://doi.org/10.1016/j.knosys.2018.05.033},
+url = {https://www.sciencedirect.com/science/article/pii/S0950705118302636},
+author = {Yijing Zhao and Zheng Zheng and Yang Liu},
+keywords = {Unmanned aerial vehicle, Path planning, Computational intelligence, Learning-based algorithms},
+abstract = {The key objective of unmanned aerial vehicle (UAV) path planning is to produce a flight path that connects a start state and a goal state while meeting the required constraints. Computational intelligence (CI) is a set of nature-inspired computational methodologies and approaches for addressing complex real-world problems for which mathematical or traditional modelling does not perform well. It has been applied in the field of UAVs since it can yield effective, accurate and rapid solutions. This article provides an overview of studies on UAV path planning based on CI methods published in major journals and conference proceedings. We survey relevant studies with respect to different CI algorithms utilized in UAV path planning, the types of time domain in UAV path planning, namely, offline and online, and the types of environment models, namely, 2D and 3D. It is observed that CI methods outperform traditional methods on online and 3D problems. The analysis is useful for identifying key results from UAV path planning research and is leveraged in this article to highlight trends and open issues.}
+}
+
+@ARTICLE{6198334,
+author={Roberge, Vincent and Tarbouchi, Mohammed and Labonte, Gilles},
+journal={IEEE Transactions on Industrial Informatics}, 
+title={Comparison of Parallel Genetic Algorithm and Particle Swarm Optimization for Real-Time UAV Path Planning}, 
+year={2013},
+volume={9},
+number={1},
+pages={132-141},
+doi={10.1109/TII.2012.2198665}
+}
+
+@article{ZHANG2014622,
+title = {A memetic algorithm for path planning of curvature-constrained UAVs performing surveillance of multiple ground targets},
+journal = {Chinese Journal of Aeronautics},
+volume = {27},
+number = {3},
+pages = {622-633},
+year = {2014},
+issn = {1000-9361},
+doi = {https://doi.org/10.1016/j.cja.2014.04.024},
+url = {https://www.sciencedirect.com/science/article/pii/S1000936114000946},
+author = {Xing Zhang and Jie Chen and Bin Xin and Zhihong Peng},
+keywords = {Approximate gradient, Dubins traveling salesman problem with neighborhood, Local search, Memetic algorithm, Unmanned aerial vehicles},
+abstract = {The problem of generating optimal paths for curvature-constrained unmanned aerial vehicles (UAVs) performing surveillance of multiple ground targets is addressed in this paper. UAVs are modeled as Dubins vehicles so that the constraints of UAVs’ minimal turning radius can be taken into account. In view of the effective surveillance range of the sensors equipped on UAVs, the problem is formulated as a Dubins traveling salesman problem with neighborhood (DTSPN). Considering its prohibitively high computational complexity, the Dubins paths in the sense of terminal heading relaxation are introduced to simplify the calculation of the Dubins distance, and a boundary-based encoding scheme is proposed to determine the visiting point of every target neighborhood. Then, an evolutionary algorithm is used to derive the optimal Dubins tour. To further enhance the quality of the solutions, a local search strategy based on approximate gradient is employed to improve the visiting points of target neighborhoods. Finally, by a minor modification to the individual encoding, the algorithm is easily extended to deal with other two more sophisticated DTSPN variants (multi-UAV scenario and multiple groups of targets scenario). The performance of the algorithm is demonstrated through comparative experiments with other two state-of-the-art DTSPN algorithms identified in literature. Numerical simulations exhibit that the algorithm proposed in this paper can find high-quality solutions to the DTSPN with lower computational cost and produce significantly improved performance over the other algorithms.}
+}
+
+@article{Pu2011ModifiedSF,
+title={Modified shuffled frog leaping algorithm for optimization of UAV flight controller},
+author={Huangzhong Pu and Ziyang Zhen and Daobo Wang},
+journal={Int. J. Intell. Comput. Cybern.},
+year={2011},
+volume={4},
+pages={25-39}
+}
+
+
+
+%集群路径规划
+@article{doi:10.1126/scirobotics.abm5954,
+author = {Xin Zhou  and Xiangyong Wen  and Zhepei Wang  and Yuman Gao  and Haojia Li  and Qianhao Wang  and Tiankai Yang  and Haojian Lu  and Yanjun Cao  and Chao Xu  and Fei Gao },
+title = {Swarm of micro flying robots in the wild},
+journal = {Science Robotics},
+volume = {7},
+number = {66},
+pages = {eabm5954},
+year = {2022},
+doi = {10.1126/scirobotics.abm5954},
+URL = {https://www.science.org/doi/abs/10.1126/scirobotics.abm5954},
+eprint = {https://www.science.org/doi/pdf/10.1126/scirobotics.abm5954},
+abstract = {Aerial robots are widely deployed, but highly cluttered environments such as dense forests remain inaccessible to drones and even more so to swarms of drones. In these scenarios, previously unknown surroundings and narrow corridors combined with requirements of swarm coordination can create challenges. To enable swarm navigation in the wild, we develop miniature but fully autonomous drones with a trajectory planner that can function in a timely and accurate manner based on limited information from onboard sensors. The planning problem satisfies various task requirements including flight efficiency, obstacle avoidance, and inter-robot collision avoidance, dynamical feasibility, swarm coordination, and so on, thus realizing an extensible planner. Furthermore, the proposed planner deforms trajectory shapes and adjusts time allocation synchronously based on spatial-temporal joint optimization. A high-quality trajectory thus can be obtained after exhaustively exploiting the solution space within only a few milliseconds, even in the most constrained environment. The planner is finally integrated into the developed palm-sized swarm platform with onboard perception, localization, and control. Benchmark comparisons validate the superior performance of the planner in trajectory quality and computing time. Various real-world field experiments demonstrate the extensibility of our system. Our approach evolves aerial robotics in three aspects: capability of cluttered environment navigation, extensibility to diverse task requirements, and coordination as a swarm without external facilities. A fully autonomous swarm composed of palm-sized drones with versatile task extensibility in the wild is realized.}
+}
+
+
+
+%未来研究方向
+@article{AGGARWAL2020270,
+title = {Path planning techniques for unmanned aerial vehicles: A review, solutions, and challenges},
+journal = {Computer Communications},
+volume = {149},
+pages = {270-299},
+year = {2020},
+issn = {0140-3664},
+doi = {https://doi.org/10.1016/j.comcom.2019.10.014},
+url = {https://www.sciencedirect.com/science/article/pii/S0140366419308539},
+author = {Shubhani Aggarwal and Neeraj Kumar},
+keywords = {Unmanned aerial vehicles (UAVs) communications, Path planning techniques, Space-air-ground integrated networks, Coverage and connectivity, Security},
+abstract = {Path planning is one of the most important problems to be explored in unmanned aerial vehicles (UAVs) for finding an optimal path between source and destination. Although, in literature, a lot of research proposals exist on the path planning problems of UAVs but still issues of target location and identification persist keeping in view of the high mobility of UAVs. To solve these issues in UAVs path planning, optimal decisions need to be taken for various mission-critical operations performed by UAVs. These decisions require a map or graph of the mission environment so that UAVs are aware of their locations with respect to the map or graph. Keeping focus on the aforementioned points, this paper analyzes various UAVs path planning techniques used over the past many years. The aim of path planning techniques is not only to find an optimal and shortest path but also to provide the collision-free environment to the UAVs. It is important to have path planning techniques to compute a safe path in the shortest possible time to the final destination. In this paper, various path planning techniques for UAVs are classified into three broad categories, i.e., representative techniques, cooperative techniques, and non-cooperative techniques. With these techniques, coverage and connectivity of the UAVs network communication are discussed and analyzed. Based on each category of UAVs path planning, a critical analysis of the existing proposals has also been done. For better understanding, various comparison tables using parameters such as-path length, optimality, completeness, cost-efficiency, time efficiency, energy-efficiency, robustness and collision avoidance are also included in the text. In addition, a number of open research problems based on UAVs path planning and UAVs network communication are explored to provide deep insights to the readers.}
+}
