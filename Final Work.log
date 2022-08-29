@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.10)  29 AUG 2022 20:00
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.10)  29 AUG 2022 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -496,6 +496,12 @@ LaTeX Font Warning: Font shape `TU/SimSun(0)/b/it' undefined
 LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sc' undefined
 (Font)              using `TU/SimSun(0)/m/n' instead on input line 58.
 
+File: fig/无人集群介绍.jpg Graphic file (type bmp)
+<fig/无人集群介绍.jpg>
+[1
+
+
+]
 No file "Final Work".bbl.
 
 ** Conference Paper **
@@ -508,22 +514,21 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1
 
+Underfull \vbox (badness 6691) has occurred while \output is active []
 
-
-] (./Final Work.aux)
+ [2] (./Final Work.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8959 strings out of 476179
- 230728 string characters out of 5813072
- 567049 words of memory out of 5000000
- 29545 multiletter control sequences out of 15000+600000
- 471525 words of font info for 108 fonts, out of 8000000 for 9000
+ 9080 strings out of 476179
+ 237048 string characters out of 5813072
+ 597049 words of memory out of 5000000
+ 29656 multiletter control sequences out of 15000+600000
+ 471533 words of font info for 109 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,8n,97p,368b,349s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,8n,97p,400b,349s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Final Work.pdf (1 page).
+Output written on Final Work.pdf (2 pages).
