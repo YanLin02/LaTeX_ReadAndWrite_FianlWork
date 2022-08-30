@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.10)  30 AUG 2022 08:15
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.10)  30 AUG 2022 08:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -387,6 +387,15 @@ Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip settings
 \@dblbotnum=\count320
 \c@dblbotnumber=\count321
+) (d:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen274
+\ar@mcellbox=\box59
+\extrarowheight=\dimen275
+\NC@list=\toks23
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box60
 )
 
 Package fontspec Info: Font family 'TeXGyreTermes(0)' created for font 'TeX
@@ -418,22 +427,22 @@ Package fontspec Info: Font family 'TeXGyreTermes(0)' created for font 'TeX
  (./Final Work.aux)
 \openout1 = `"Final Work.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 -- Lines per column: 41 (approximate, difference = 2.34192pt).
 
@@ -442,63 +451,63 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 32.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 32.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 32.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 32.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 32.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 32.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 32.
-LaTeX Font Info:    Redeclaring math accent \check on input line 32.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 32.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 32.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 32.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 32.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 32.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 33.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 33.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 33.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 33.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 33.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 33.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 33.
+LaTeX Font Info:    Redeclaring math accent \check on input line 33.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 33.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 33.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 33.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 32.
+(Font)              `operators' in the math version `normal' on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermes(0)/m/n on input line 32.
+(Font)                  OT1/cmr/m/n --> TU/TeXGyreTermes(0)/m/n on input line 33.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 32.
+(Font)              `operators' in the math version `bold' on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/m/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/m/n on input line 32.
+(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/TeXGyreTermes(0)/m/it on input line 32.
+(Font)                  OT1/cmr/m/it --> TU/TeXGyreTermes(0)/m/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/b/n on input line 32.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreTermes(0)/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/phv/m/n on input line 32.
+(Font)                  OT1/cmss/m/n --> TU/phv/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> TU/pcr/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/b/n on input line 32.
+(Font)                  TU/TeXGyreTermes(0)/m/n --> TU/TeXGyreTermes(0)/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermes(0)/b/it on input line 32.
+(Font)                  OT1/cmr/bx/it --> TU/TeXGyreTermes(0)/b/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/phv/b/n on input line 32.
+(Font)                  OT1/cmss/bx/n --> TU/phv/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 32.
+(Font)                  OT1/cmtt/m/n --> TU/pcr/b/n on input line 33.
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/b/it' undefined
-(Font)              using `TU/SimSun(0)/b/n' instead on input line 39.
+(Font)              using `TU/SimSun(0)/b/n' instead on input line 40.
 
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sc' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 59.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 60.
 
 File: fig/无人集群介绍.jpg Graphic file (type bmp)
 <fig/无人集群介绍.jpg>
@@ -506,24 +515,38 @@ File: fig/无人集群介绍.jpg Graphic file (type bmp)
 
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
- (d:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+LaTeX Warning: Citation `路径规划数学定义1' on page 2 undefined on input line 100.
+
+
+LaTeX Warning: Citation `路径规划数学定义2' on page 2 undefined on input line 100.
+
+
+LaTeX Warning: Citation `路径规划数学定义3' on page 2 undefined on input line 100.
+
+
+LaTeX Warning: Citation `路径规划数学定义4' on page 2 undefined on input line 100.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 100.
+(d:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 100.
  (d:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+
+LaTeX Warning: Citation `无人机路径规划综述' on page 2 undefined on input line 121.
+
 File: fig/三维问题.jpg Graphic file (type bmp)
 <fig/三维问题.jpg>
- [2]
+[2]
+
+LaTeX Warning: Citation `无人机路径规划综述' on page 3 undefined on input line 134.
+
 File: fig/单机规划.jpg Graphic file (type bmp)
 <fig/单机规划.jpg>
- (./Final Work.bbl
-** WARNING: IEEEtran.bst: No hyphenation pattern has been
-** loaded for the language `English'. Using the pattern for
-** the default language instead.
-)
+No file "Final Work".bbl.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -535,18 +558,21 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (./Final Work.aux)
+[3] [4] (./Final Work.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 9251 strings out of 476179
- 241825 string characters out of 5813072
- 597675 words of memory out of 5000000
- 29804 multiletter control sequences out of 15000+600000
- 474388 words of font info for 123 fonts, out of 8000000 for 9000
+ 9318 strings out of 476179
+ 243538 string characters out of 5813072
+ 598582 words of memory out of 5000000
+ 29869 multiletter control sequences out of 15000+600000
+ 474396 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,8n,97p,400b,349s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,11n,97p,400b,349s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Final Work.pdf (3 pages).
+Output written on Final Work.pdf (4 pages).

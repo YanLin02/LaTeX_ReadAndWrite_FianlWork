@@ -10,6 +10,7 @@
 \usepackage{subfigure}
 \usepackage{overpic}
 \usepackage{stfloats}
+\usepackage{array}
 \setmainfont{TeX Gyre Termes}
 
 %定义引用
@@ -149,8 +150,24 @@
 
  基于多融合的算法将多种算法的优点融合在一起，以实现全局最优和代价最小。此算法通常同时考虑节约时间和信息，有时把几种相对简单的方法结合起来形成一个相对更好的执行方法，因此适合在线实现。
  
-%表\tabref{}直观展示了这些算法的特点。
+\tabref{tab:算法特点}直观展示了这些算法的特点。
 
+\begin{table*}[hb]
+    \centering
+    \caption{时下流行算法的特点} \label{tab:算法特点}
+    \renewcommand\arraystretch{1.8}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{ l | p{8cm} c c c}
+        算法类别&对应算法&时间复杂度&环境&是否实时\\
+        \hline
+        基于抽样的算法&Voronoi , RRT , PRM, K-PRM , S-PRM , Visibility Graphs , Corridor Map, DDRRT , RRT*&$O(n \log n) \leq T \leq O(n^{2} )$&静态和动态&是\\
+        基于节点的算法&Dijkstra’s Algorithms , A* , D*, LPA , Theta* , Lazy Theta* , D*-Lite , Harmony Search&$O(m \log n) \leq T\leq O(n^2)$&静态和动态&是\\
+        基于数学模型的算法&Optimal Control , Mixed- Integer Linear Programming , Binary Linear Programming, Non-linear Programming&取决于多项式方程&静态和动态&否\\
+        基于生物启发的算法&NN , genetic algorithm , memetic algorithm, particle swarm optimization , ant colony optimization, shuffled frog leaping algorithm&$T \geq O(n^2)$&静态&否\\
+        基于多重融合的算法&VVP, PRM Node based, optimal algorithms ,GIS-MCDA algorithms ,visibility graph Node based optimal algorithms , visibility graph ,Geodesics algorithm&$O(n \log n) \leq T$&取决于算法&是
+    \end{tabular}
+    }
+\end{table*}
 
 
 \subsection{基于抽样的基本算法与基于节点的基本算法}%Subsection 2 基于抽样的基本算法与基于节点的基本算法
