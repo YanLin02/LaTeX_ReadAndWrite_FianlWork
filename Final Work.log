@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.10)  30 AUG 2022 09:04
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.10)  30 AUG 2022 09:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -515,41 +515,41 @@ File: fig/无人集群介绍.jpg Graphic file (type bmp)
 
 
 ]
-
-LaTeX Warning: Citation `路径规划数学定义1' on page 2 undefined on input line 100.
-
-
-LaTeX Warning: Citation `路径规划数学定义2' on page 2 undefined on input line 100.
-
-
-LaTeX Warning: Citation `路径规划数学定义3' on page 2 undefined on input line 100.
-
-
-LaTeX Warning: Citation `路径规划数学定义4' on page 2 undefined on input line 100.
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 100.
-(d:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (d:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 100.
  (d:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: Citation `无人机路径规划综述' on page 2 undefined on input line 121.
-
 File: fig/三维问题.jpg Graphic file (type bmp)
 <fig/三维问题.jpg>
-[2]
-
-LaTeX Warning: Citation `无人机路径规划综述' on page 3 undefined on input line 134.
-
+ [2]
 File: fig/单机规划.jpg Graphic file (type bmp)
 <fig/单机规划.jpg>
 File: fig/Dijkstra算法1.jpg Graphic file (type bmp)
 <fig/Dijkstra算法1.jpg>
-[3]
-No file "Final Work".bbl.
+ [3]
+File: fig/Dijkstra算法2.jpg Graphic file (type bmp)
+<fig/Dijkstra算法2.jpg>
+File: fig/Dijkstra算法3.jpg Graphic file (type bmp)
+<fig/Dijkstra算法3.jpg>
+
+Underfull \hbox (badness 1565) in paragraph at lines 233--234
+[]\TU/SimSun(0)/m/n/10.53937 然 后，|  从  |“未 求 出 最 短 路 径 的 点”| $\OML/cmm/m/it/10.53937 notFound$
+ []
+
+File: fig/Dijkstra算法4.jpg Graphic file (type bmp)
+<fig/Dijkstra算法4.jpg>
+(./Final Work.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -561,23 +561,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4
+[5
 
 ] (./Final Work.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 9341 strings out of 476179
- 244076 string characters out of 5813072
+ 9426 strings out of 476179
+ 245932 string characters out of 5813072
  598582 words of memory out of 5000000
- 29891 multiletter control sequences out of 15000+600000
+ 29971 multiletter control sequences out of 15000+600000
  474396 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,11n,97p,400b,349s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Final Work.pdf (4 pages).
+Output written on Final Work.pdf (5 pages).

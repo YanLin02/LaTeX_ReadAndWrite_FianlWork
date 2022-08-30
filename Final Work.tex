@@ -190,7 +190,7 @@ $notFound$：未求出最小路径的顶点，里面的值是到起点的距离
     \centering
     \begin{overpic}[width=0.45\textwidth]{fig/Dijkstra算法1}
     \end{overpic}
-    \caption{三维空间中的复杂环境}\label{fig:Dijkstra算法1}
+    \caption{Dijkstra算法举例1}\label{fig:Dijkstra算法1}
  \end{figure}
 
  从“未求出最短路径的点”$notFound$中取出最短路径的点$B(2)$，放入结果$result$中，结果如下：
@@ -203,13 +203,43 @@ $notFound$：未求出最小路径的顶点，里面的值是到起点的距离
 
  例如$AD = 6 < AB + BD = 4$以$B(2)$为桥梁的距离更短，就刷新“未求出最短路径点”$D(6)$ 的距离为 $D(4)$，$notFound={C(∞),D(4)}$。
 
- 同理刷新 C(∞) 的距离为 C(5) ，最后结果如下：
+ 同理刷新 C(∞) 的距离为 C(5) ，最后结果如下，见\figref{fig:Dijkstra算法2}：
 
  “未求出最短路径点”$notFound={C(5),D(4)}$
 
  “已求出最短路径的点”$result={A(0),B(2)}$
  
+ \begin{figure}[htbp]
+    \centering
+    \begin{overpic}[width=0.45\textwidth]{fig/Dijkstra算法2}
+    \end{overpic}
+    \caption{Dijkstra算法举例2}\label{fig:Dijkstra算法2}
+ \end{figure}
 
+ 然后，从“未求出最短路径的点”$notFound$中取出最短路径的点$D(4)$，然后通过$D(4)$为桥梁刷新“未求出最短路径的点”的距离。
+ 同理，最后结果如下，见\figref{fig:Dijkstra算法3}：
+
+ “未求出最短路径点”$notFound={C(5)}$
+
+ “已求出最短路径的点”$result={A(0),B(2),D(4)}$
+ 
+ \begin{figure}[htbp]
+    \centering
+    \begin{overpic}[width=0.45\textwidth]{fig/Dijkstra算法3}
+    \end{overpic}
+    \caption{Dijkstra算法举例3}\label{fig:Dijkstra算法3}
+ \end{figure}
+
+ 然后，从“未求出最短路径的点”$notFound$中取出最短路径的点$C(5)$，算法结束。$result={A(0),B(2),D(4),C(5)}$就是最终所求的最短距离。结果如\figref{fig:Dijkstra算法4}。
+ 
+ \begin{figure}[htbp]
+    \centering
+    \begin{overpic}[width=0.45\textwidth]{fig/Dijkstra算法4}
+    \end{overpic}
+    \caption{Dijkstra算法举例4}\label{fig:Dijkstra算法4}
+ \end{figure}
+
+ 而如果想要知道最短路径，只需要在每个点从$notFound$状态变为$result$状态时，即实现最小距离时连接的前一个点。这样只需要从终点向前连接记录的点，便可以找到最短路径。
 
 \subsubsection{PRM算法}%Subsubsection 2  PRM算法
 
