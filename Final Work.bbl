@@ -47,4 +47,10 @@ L.~Yang, J.~Qi, J.~Xiao, and X.~Yong, ``A literature review of uav 3d path
   planning,'' in \emph{Proceeding of the 11th World Congress on Intelligent
   Control and Automation}, 2014, pp. 2376--2381.
 
+\bibitem{PRM算法}
+R.~Bohlin and L.~Kavraki, ``Path planning using lazy prm,'' in
+  \emph{Proceedings 2000 ICRA. Millennium Conference. IEEE International
+  Conference on Robotics and Automation. Symposia Proceedings (Cat.
+  No.00CH37065)}, vol.~1, 2000, pp. 521--528 vol.1.
+
 \end{thebibliography}

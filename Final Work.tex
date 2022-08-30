@@ -243,6 +243,32 @@ $notFound$：未求出最小路径的顶点，里面的值是到起点的距离
 
 \subsubsection{PRM算法}%Subsubsection 2  PRM算法
 
+PRM算法即概率路图算法（Probabilistic Road Map），基于随机采样的路径规划算法。这类算法适用于高维度空间，它们以概率完备性（当时间接近无限时一定有解）来代替完备性，从而提高搜索效率。在阅读论文Path planning using lazy PRM\cite{PRM算法}和查阅有关资料后，我们对PRM有了如下的简单理解。
+
+PRM算法首先使用随机采样的方式在环境中建立路径网络图，将连续的空间转换为离散的空间，然后在路径网络图上进行路径规划，解决在高维空间中搜索效率低的问题。算法流程如下，见\figref{fig:PRM算法流程}：
+
+\begin{figure*}[!t]
+    \centering
+    \subfigure[采样] {\includegraphics[height=2in,width=2in,angle=-90]{fig/PRM算法1}}
+    \subfigure[生成概率路图] {\includegraphics[height=2in,width=2in,angle=-90]{fig/PRM算法2}}
+    \subfigure[搜索路径] {\includegraphics[height=2in,width=2in,angle=-90]{fig/PRM算法3}}
+    \caption{ PRM算法流程 }
+    \label{fig:PRM算法流程}
+\end{figure*}
+
+采样：在地图中随机撒点，剔除落在障碍物上的点。
+
+生成概率路图：根据点与点间的距离和是否存在直线通路将上步中得到的采样点进行连接。
+
+搜索路径：使用图搜索算法（如Dijkstra算法）在上步得到的路图中搜索出一条从起点到终点的最短路径。
+
+其中采样点的数量和采样点间存在通路的最大距离是路径规划成功与否的关键。
+
+采样点太少，可能会导致路径规划失败;
+
+采样点数量增加，搜索到的路径会逐渐接近最短路径，但同时搜索效率会降低。
+
+PRM算法参数少、结构简单，能够提高高维空间搜索效率，也能在生成概率路图时添加机器人的运动学约束，使最终生成的路径符合机器人的运动学模型。同时，随机采样得到的概率路图只需要建立一次就可以一直使用，重用性强。但由于采样过程是完全随机的，得到的节点大多数都偏离最终路径，会增加额外的计算量。
 
 \subsubsection{RRT算法}%Subsubsection 3  RRT算法
 
