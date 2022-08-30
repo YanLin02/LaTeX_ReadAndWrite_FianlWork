@@ -334,15 +334,51 @@ RRT作为一种随机采样的规划算法，它的复杂度也不受地图的�
  
 \subsection{集群路径规划}%Subsection 4 集群路径规划
 
+在上述几个subsection我们已经具体阐述了单个无人机系统路径规划的几种算法，但想要做到无人机集群的路径规划，在原有的单个无人机路径规划的基础上，还需要解决无人机间的相互避障、轨迹共享等一系列重要问题。
 
+为此，我们小组查询了一篇关于无人机集群路径规划的论文Swarm of micro flying robots in the wild\cite{集群路径规划}。该论文提出了一种基于轨迹规划的鸟类导航方法，通过模仿鸟类飞行特点来指导无人机集群的路径规划，拥有更高的最佳性和灵活性。因此，提高了任务效率和可扩展性。
+
+鸟类能够在森林中自由飞行，同时避开障碍物和其他移动的生物，在短程导航中，鸟类主要依靠眼睛及其前庭系统。受此启发，作者们开发了改进的视觉惯性里程计，在每架无人机上独立运行的视觉惯性测距仪，使每架无人机都配备了完整的感知、定位、规划和控制功能，以实现航空群定位，并由广播网络共享轨迹松散耦合（见\figref{fig:集群路径规划1}）。然而，累积里程数漂移可能导致无人机在继续报告时发生碰撞，保持安全距离，因此作者们开发了一种分散漂移校正算法，通过最小化机载超宽带(UWB)传感器测量的相对距离误差。
+
+\begin{figure}[htbp]
+    \centering
+    \begin{overpic}[width=0.45\textwidth]{fig/集群路径规划1}
+    \end{overpic}
+    \caption{无人机配备的功能}\label{fig:集群路径规划1}
+ \end{figure}
+
+ 视觉惯性里程计（VIO），有时也叫视觉惯性系统，是融合相机和IMU（惯性测量单元）数据实现SLAM的算法（实现机器人定位、建图、路径规划的一种算法），根据融合框架的不同又分为松耦合和紧耦合，本论文选择的是松耦合，如\figref{fig:集群路径规划2.3}展示。
+
+ \begin{figure}[htbp]
+    \centering
+    \begin{overpic}[width=0.45\textwidth]{fig/集群路径规划2}
+    \end{overpic}
+    \begin{overpic}[width=0.45\textwidth]{fig/集群路径规划3}
+    \end{overpic}
+    \caption{视觉惯性系统介绍}\label{fig:集群路径规划2.3}
+ \end{figure}
+
+ 此外，鸟类可以同时调整路径和速度以避免碰撞，同时考虑飞行时间和平滑度以节省能量，因此作者们提出了具有多个目标的时空轨迹联合优化。除了参考小鸟的能力之外，作者们还进一步利用了电动人工系统的优势，该系统的特点是高保真无线通信用于轨迹共享，高速计算用于快速规划，以此来保障无人机集群的整体路径规划。
 
 
 \section{总结}%Section 3 总结
 
-
-
 \subsection{文章结构及论文关系}%Subsection 1 文章结构及论文关系
 
+在本篇文章中，我们从智能无人集群系统白皮书入手，着重讲述了无人机路径规划问题，并探究了无人机路径规划研究的工作意义与未来方向。整体结构如\figref{fig:文章结构及论文关系}所示：
+
+\begin{figure*}[htbp]
+    \centering
+    \begin{overpic}[width=0.45\textwidth]{fig/文章结构及论文关系}
+    \end{overpic}
+    \caption{文章结构及论文关系}\label{fig:文章结构及论文关系}
+\end{figure*}
+
+在研究路径规划论文时，我们以A literature review of UAV 3D path planning\cite{无人机路径规划综述}作为出发点研究单体无人机路径规划的流行算法，并深入研究了基于抽样的算法、基于结点的算法与基于基于生物启发的算法。
+
+在研究单体无人机路径规划的基础上，我们以高飞老师的 Swarm of micro flying robots in the wild\cite{集群路径规划}为切入点进一步研究了无人机集群路径规划问题，探究其多飞行器合作与规划的机理与感知外界的机理。
+
+最后，我们结合 Path planning techniques for unmanned aerial vehicles: A review, solutions, and challenges\cite{未来研究方向}探讨了无人机路径规划研究的工作意义与未来方向，并对本论文的缺陷加以总结。
 
 
 \subsection{工作意义}%Subsection 2 工作意义

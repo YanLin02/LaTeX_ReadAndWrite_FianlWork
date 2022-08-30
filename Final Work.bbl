@@ -107,4 +107,20 @@ Y.~Zhao, Z.~Zheng, and Y.~Liu, ``Survey on computational-intelligence-based uav
   \url{https://www.sciencedirect.com/science/article/pii/S0950705118302636}
 \BIBentrySTDinterwordspacing
 
+\bibitem{集群路径规划}
+\BIBentryALTinterwordspacing
+X.~Zhou, X.~Wen, Z.~Wang, Y.~Gao, H.~Li, Q.~Wang, T.~Yang, H.~Lu, Y.~Cao,
+  C.~Xu, and F.~Gao, ``Swarm of micro flying robots in the wild,''
+  \emph{Science Robotics}, vol.~7, no.~66, p. eabm5954, 2022. [Online].
+  Available: \url{https://www.science.org/doi/abs/10.1126/scirobotics.abm5954}
+\BIBentrySTDinterwordspacing
+
+\bibitem{未来研究方向}
+\BIBentryALTinterwordspacing
+S.~Aggarwal and N.~Kumar, ``Path planning techniques for unmanned aerial
+  vehicles: A review, solutions, and challenges,'' \emph{Computer
+  Communications}, vol. 149, pp. 270--299, 2020. [Online]. Available:
+  \url{https://www.sciencedirect.com/science/article/pii/S0140366419308539}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
