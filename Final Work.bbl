@@ -53,4 +53,20 @@ R.~Bohlin and L.~Kavraki, ``Path planning using lazy prm,'' in
   Conference on Robotics and Automation. Symposia Proceedings (Cat.
   No.00CH37065)}, vol.~1, 2000, pp. 521--528 vol.1.
 
+\bibitem{RRT算法}
+S.~M. LaValle, ``Rapidly-exploring random trees : a new tool for path
+  planning,'' \emph{The annual research report}, 1998.
+
+\bibitem{基于RRT的优化算法1}
+J.~Kuffner and S.~LaValle, ``Rrt-connect: An efficient approach to single-query
+  path planning,'' in \emph{Proceedings 2000 ICRA. Millennium Conference. IEEE
+  International Conference on Robotics and Automation. Symposia Proceedings
+  (Cat. No.00CH37065)}, vol.~2, 2000, pp. 995--1001 vol.2.
+
+\bibitem{基于RRT的优化算法2}
+O.~Arslan, K.~Berntorp, and P.~Tsiotras, ``Sampling-based algorithms for
+  optimal motion planning using closed-loop prediction,'' in \emph{2017 IEEE
+  International Conference on Robotics and Automation (ICRA)}, 2017, pp.
+  4991--4996.
+
 \end{thebibliography}

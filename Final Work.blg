@@ -15,45 +15,45 @@ Warning--missing publisher in 路径规划数学定义1
 Warning--missing school in 路径规划数学定义2
 
 Done.
-You've used 6 entries,
+You've used 9 entries,
             4087 wiz_defined-function locations,
-            858 strings with 8486 characters,
-and the built_in function-call counts, 4321 in all, are:
-= -- 320
-> -- 101
-< -- 35
-+ -- 55
-- -- 17
-* -- 219
-:= -- 646
-add.period$ -- 11
-call.type$ -- 6
-change.case$ -- 4
-chr.to.int$ -- 87
-cite$ -- 8
-duplicate$ -- 289
-empty$ -- 369
-format.name$ -- 21
-if$ -- 1000
+            876 strings with 9041 characters,
+and the built_in function-call counts, 6760 in all, are:
+= -- 507
+> -- 150
+< -- 61
++ -- 83
+- -- 23
+* -- 330
+:= -- 988
+add.period$ -- 17
+call.type$ -- 9
+change.case$ -- 7
+chr.to.int$ -- 156
+cite$ -- 11
+duplicate$ -- 456
+empty$ -- 582
+format.name$ -- 29
+if$ -- 1585
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 53
-newline$ -- 43
-num.names$ -- 6
-pop$ -- 134
+int.to.str$ -- 9
+missing$ -- 78
+newline$ -- 52
+num.names$ -- 9
+pop$ -- 198
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 331
+skip$ -- 521
 stack$ -- 0
-substring$ -- 201
-swap$ -- 238
-text.length$ -- 6
+substring$ -- 358
+swap$ -- 375
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 6
+type$ -- 9
 warning$ -- 2
-while$ -- 15
-width$ -- 7
-write$ -- 77
+while$ -- 24
+width$ -- 10
+write$ -- 104
 (There were 2 warnings)

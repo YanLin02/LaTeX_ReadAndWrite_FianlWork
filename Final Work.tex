@@ -272,7 +272,35 @@ PRM算法参数少、结构简单，能够提高高维空间搜索效率，也�
 
 \subsubsection{RRT算法}%Subsubsection 3  RRT算法
 
+RRT即快速随机扩展树算法(Rapidly-exploring Random Tree, RRT)
 
+RRT算法是一种单查询(single-query)算法，目标是尽可能快的找到一条从起点到终点的可行路径。在阅读了论文Rapidly-Exploring Random Trees: A New Tool for Path Planning\cite{RRT算法}和查阅了部分资料后，我们将改算法简单理解为下面几个步骤：
+
+如\figref{fig:RRT算法1},它的搜索过程类似于一棵树不断生长、向四周扩散的过程，它以起点作为根节点构建一棵搜索树$T$。
+
+\begin{figure}[htbp]
+    \centering
+    \begin{overpic}[width=0.45\textwidth]{fig/RRT算法1}
+    \end{overpic}
+    \caption{RRT算法图示}\label{fig:RRT算法1}
+\end{figure}
+
+用$X_{init}$ 表示起点，$T$表示随机树，在算法开始时，将起点$X_{init}$加入到随机树。接下来使用$SampleFree$函数在自由空间中随机采样，获得一个采样点$X_{rand}$，再使用$Nearest$函数获得随机树中距离$X_{rand}$最近的一个节点$X_{near}$；使用$Steer$函数在$X_{near}$和$X_{rand}$的连线上距离$X_{near}$步长$u$的位置生成一个节点$X_{new}$，使用$ObtacleFree$函数判断$X_{near}$和$X_{new}$间是否存在直线通路，若存在则将$X_{new}$加入到随机树$T$的节点集合中，同时将$X_{near}$作为$X_{new}$的父节点，将边$ (X_{near},X_{new})$加入到随机树$T$的边集中。
+
+\begin{figure}[htbp]
+    \centering
+    \begin{overpic}[width=0.45\textwidth]{fig/RRT算法2}
+    \end{overpic}
+    \caption{RRT算法原理}\label{fig:RRT算法2}
+\end{figure}
+
+在自由空间中随机采样得到采样点$X_{rand}$，从搜索树$T$中找出距离采样点$X_{rand}$最近的节点$X_{near}$计算$X_{near}$和$X_{rand}$之间的距离。如果距离大于步长$u$，则从$X_{near}$向$X_{rand}$移动步长$u$后得到新节点$X_{new}$;否则在$X_{rand}$位置生成新节点$X_{new}$. 如果$X_{new}$和$X_{near}$间存在直线通路，则将$X_{new}$加入搜索树$T$，它的父节点为$X_{near}$;否则进入下一轮循环。
+
+上述是基础的RRT算法流程，\figref{fig:RRT算法2}给出了算法的图片解释。该算法的采样过程是完全随机的，还可以在采样时以一定的概率直接采样终点作为$X_{rand}$，加快搜索速度。
+
+RRT作为一种随机采样的规划算法，它的复杂度也不受地图的离散程度影响，在高维空间中仍具有很高的搜索效率。但是前面提到RRT是一种单查询算法，只管尽快地找到可行路径，所以最终路径并不是最优的，甚至会非常“绕”。
+
+此外，还有一些基于RRT的优化算法，例如RRT-connect、RRT*等，可以参考这些论文RRT-connect: An efficient approach to single-query path planning\cite{基于RRT的优化算法1}、Sampling-based Algorithms for Optimal Motion Planning\cite{基于RRT的优化算法2}。
 
 \subsection{基于生物启发的优化算法}%Subsection 3 基于生物启发的优化算法
 
