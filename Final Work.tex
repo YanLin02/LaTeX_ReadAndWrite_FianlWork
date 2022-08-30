@@ -133,12 +133,12 @@
 
  Yang\cite{无人机路径规划综述}将当下流行的算法分为基于抽样的算法、基于节点的算法、基于数学模型的算法基于生物启发的算法四类，并且提出了“基于多重融合算法”这一概念，如\figref{fig:单机规划}所示。
 
- \begin{figure*}[hb]
+ \begin{figure}[hb]
     \centering
     \begin{overpic}[width=0.45\textwidth]{fig/单机规划}
     \end{overpic}
     \caption{当下流行的算法分类}\label{fig:单机规划}
- \end{figure*}
+ \end{figure}
 
  基于抽样的算法首先将环境作为一组节点进行抽样，然后通过“逐步逼近”或“深度优先搜索”等等过程将节点连接起来。找出所有可能的路径后开始搜索最优路径。这种方法结构简单且易于实现。因此，此算法适用于任一静态或动态的规划条件。
  
@@ -172,9 +172,43 @@
 下面将着重讲解其中的几种代表性算法。
 
 \subsection{基于抽样的基本算法与基于节点的基本算法}%Subsection 2 基于抽样的基本算法与基于节点的基本算法
-
-
 \subsubsection{Dijkstra算法}%Subsubsection 1  Dijkstra算法
+
+Dijstra是从一个顶点到其余各顶点的最短路径算法，解决的是有权图中最短路径问题。迪杰斯特拉算法主要特点是从起始点开始，采用贪心算法的策略，每次遍历到始点距离最近且未访问过的顶点的邻接节点，直到扩展到终点为止。
+
+查阅资料后，我们举出一下例子以便于理解：
+
+将该算法简单理解为：每次从“未求出最短路径的点”中取出距离距离起点最小路径的点，以这个点为桥梁刷新“未求出最短路径的点的距离”。以$A$点为顶点，求到其他点的最短路径。
+
+$result$：已求出最小路径的顶点
+
+$notFound$：未求出最小路径的顶点，里面的值是到起点的距离
+
+初始如\figref{fig:Dijkstra算法1}所示，$result={A(0)}$中只有起点A，$notFound={B(2),C(\infty),D(6)}$ 中是除了$A$点的其他点，里面的值是到起点的距离（例如$B(2)$代表$B$点到起点的距离为2）
+
+\begin{figure}[htbp]
+    \centering
+    \begin{overpic}[width=0.45\textwidth]{fig/Dijkstra算法1}
+    \end{overpic}
+    \caption{三维空间中的复杂环境}\label{fig:Dijkstra算法1}
+ \end{figure}
+
+ 从“未求出最短路径的点”$notFound$中取出最短路径的点$B(2)$，放入结果$result$中，结果如下：
+
+ “未求出最短路径点”$notFound={C(\infty),D(6)}$
+
+ “已求出最短路径的点”$result={A(0),B(2)}$
+
+ 通过$B(2)$为桥梁，刷新距离。
+
+ 例如$AD = 6 < AB + BD = 4$以$B(2)$为桥梁的距离更短，就刷新“未求出最短路径点”$D(6)$ 的距离为 $D(4)$，$notFound={C(∞),D(4)}$。
+
+ 同理刷新 C(∞) 的距离为 C(5) ，最后结果如下：
+
+ “未求出最短路径点”$notFound={C(5),D(4)}$
+
+ “已求出最短路径的点”$result={A(0),B(2)}$
+ 
 
 
 \subsubsection{PRM算法}%Subsubsection 2  PRM算法
