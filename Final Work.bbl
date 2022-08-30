@@ -42,4 +42,9 @@ S.~Karaman and E.~Frazzoli, ``Sampling-based algorithms for optimal motion
   \url{https://doi.org/10.1177/0278364911406761}
 \BIBentrySTDinterwordspacing
 
+\bibitem{无人机路径规划综述}
+L.~Yang, J.~Qi, J.~Xiao, and X.~Yong, ``A literature review of uav 3d path
+  planning,'' in \emph{Proceeding of the 11th World Congress on Intelligent
+  Control and Automation}, 2014, pp. 2376--2381.
+
 \end{thebibliography}
